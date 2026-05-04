@@ -1,3 +1,36 @@
+## About This Fork
+This project is a fork of Donkie/Spoolman with an improvement to simplify spool management.
+
+In the original workflow, users often had to create multiple spool entries for the same filament type and manually adjust the spool ID each time. This was inconvenient when the only changing parameter was the remaining filament weight.
+
+To address this, the fork introduces a new feature:
+
+### 🔧 Added: Initial Filament Weight Adjustment Button
+A new UI button allows modifying the initial filament weight of a spool.
+This makes it possible to maintain a single spool entry and simply update the available weight as needed, without creating duplicates.
+
+Using with Docker Compose
+To run Spoolman via Docker Compose, use the following configuration:
+
+```yaml
+version: '3.8'
+services:
+  spoolman:
+    image: interpol/spoolman
+    restart: unless-stopped
+    volumes:
+      # Mount the host machine's ./data directory into the container's /home/app/.local/share/spoolman directory
+      - type: bind
+        source: ./data  # Local directory where the data will be stored. You may also use a path like /home/pi/printer_data/spoolman.
+        target: /home/app/.local/share/spoolman  # Do NOT modify this line
+    ports:
+      # Map the host machine's port 7912 to the container's port 8000
+      - "7912:8000"
+    environment:
+      - TZ=Europe/Kiev  # Optional, defaults to UTC
+```
+#
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Donkie/Spoolman/assets/2332094/4e6e80ac-c7be-4ad2-9a33-dedc1b5ba30e">
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/Donkie/Spoolman/assets/2332094/3c120b3a-1422-42f6-a16b-8d5a07c33000">
