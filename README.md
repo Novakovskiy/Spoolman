@@ -1,3 +1,14 @@
+## About This Fork
+This project is a fork of Donkie/Spoolman with an improvement to simplify spool management.
+
+In the original workflow, users often had to create multiple spool entries for the same filament type and manually adjust the spool ID each time. This was inconvenient when the only changing parameter was the remaining filament weight.
+
+To address this, the fork introduces a new feature:
+
+### 🔧 Added: Initial Filament Weight Adjustment Button
+A new UI button allows modifying the initial filament weight of a spool.
+This makes it possible to maintain a single spool entry and simply update the available weight as needed, without creating duplicates.
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Donkie/Spoolman/assets/2332094/4e6e80ac-c7be-4ad2-9a33-dedc1b5ba30e">
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/Donkie/Spoolman/assets/2332094/3c120b3a-1422-42f6-a16b-8d5a07c33000">
