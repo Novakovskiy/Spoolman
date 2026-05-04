@@ -1,4 +1,4 @@
-﻿{
+{
     "actions": {
         "list": "Listar",
         "create": "Criar",
@@ -196,7 +196,7 @@
             "show_title": "[Carretel #{{id}}] {{name}}",
             "archive": "Arquivar Carretel",
             "adjust": "Ajustar Filamento no Carretel",
-            "addweight": "Ajustar peso inicial"
+            "adjustInitialWeight": "Ajustar peso inicial"
         },
         "form": {
             "measurement_type": {
@@ -206,8 +206,8 @@
             "measurement_type_label": "Tipo de Medida",
             "adjust_filament_help": "Aqui você pode adicionar ou subtrair filamento diretamente do carretel. Um valor positivo consumirá filamento, um valor negativo adicionará filamento.",
             "adjust_filament_value": "Quantidade Consumida",
-            "addweight_help": "Insira o número de gramas a adicionar ao peso inicial. Use um número negativo para subtrair.",
-            "addweight_value": "Ajuste de peso (g)",
+            "adjustInitialWeight_help": "Insira o número de gramas a adicionar ao peso inicial. Use um número negativo para subtrair.",
+            "adjustInitialWeight_value": "Ajuste de peso (g)",
             "new_location_prompt": "Insira um novo local",
             "spool_updated": "Este carretel foi atualizado por alguém/outra coisa desde que você abriu esta página. Salvar irá sobrescrever essas alterações!"
         },

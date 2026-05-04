@@ -1,4 +1,4 @@
-﻿{
+{
     "actions": {
         "clone": "複製",
         "show": "檢視",
@@ -192,7 +192,7 @@
             "list": "線盤",
             "show": "檢視線盤",
             "adjust": "調整料盤線材",
-            "addweight": "調整初始重量",
+            "adjustInitialWeight": "調整初始重量",
             "show_title": "[線盤 #{{id}}] {{name}}",
             "archive": "封存線盤"
         },
@@ -200,8 +200,8 @@
             "measurement_type_label": "測量類型",
             "adjust_filament_help": "此處您可直接增加或減少料盤上的線材，正數為減少線材數量，負數為增加線材數量。",
             "adjust_filament_value": "消耗量",
-            "addweight_help": "輸入要新增至初始重量的克數。使用負數來減少。",
-            "addweight_value": "重量調整 (g)",
+            "adjustInitialWeight_help": "輸入要新增至初始重量的克數。使用負數來減少。",
+            "adjustInitialWeight_value": "重量調整 (g)",
             "measurement_type": {
                 "length": "長度",
                 "weight": "重量"

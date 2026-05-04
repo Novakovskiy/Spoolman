@@ -1,4 +1,4 @@
-﻿{
+{
     "actions": {
         "list": "Kuva",
         "create": "Loo",
@@ -66,11 +66,11 @@
     },
     "spool": {
         "titles": {
-            "addweight": "Muuda algkaalu"
+            "adjustInitialWeight": "Muuda algkaalu"
         },
         "form": {
-            "addweight_help": "Sisestage grammide arv, mida soovite algkaalule lisada. Lahutamiseks kasutage negatiivset arvu.",
-            "addweight_value": "Kaalu muutus (g)"
+            "adjustInitialWeight_help": "Sisestage grammide arv, mida soovite algkaalule lisada. Lahutamiseks kasutage negatiivset arvu.",
+            "adjustInitialWeight_value": "Kaalu muutus (g)"
         }
     }
 }

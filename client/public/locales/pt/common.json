@@ -1,4 +1,4 @@
-﻿{
+{
     "actions": {
         "create": "Criar",
         "show": "Mostrar",
@@ -194,7 +194,7 @@
             "show_title": "[Bobine #{{id}}] {{name}}",
             "archive": "Arquivar Bobine",
             "adjust": "Ajustar Filamento",
-            "addweight": "Ajustar peso inicial"
+            "adjustInitialWeight": "Ajustar peso inicial"
         },
         "form": {
             "new_location_prompt": "Insira um novo local",
@@ -206,8 +206,8 @@
             "measurement_type_label": "Tipo de Medida",
             "adjust_filament_help": "Aqui pode adicionar ou subtrair filamento da bobine. Um valor positivo consome filamento, um valor negativo adiciona filamento.",
             "adjust_filament_value": "Consumir Montante",
-            "addweight_help": "Insira o número de gramas a adicionar ao peso inicial. Use um número negativo para subtrair.",
-            "addweight_value": "Ajuste de peso (g)"
+            "adjustInitialWeight_help": "Insira o número de gramas a adicionar ao peso inicial. Use um número negativo para subtrair.",
+            "adjustInitialWeight_value": "Ajuste de peso (g)"
         },
         "messages": {
             "archive": "Tem certeza de que deseja arquivar esta bobine?"

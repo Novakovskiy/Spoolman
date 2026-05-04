@@ -1,4 +1,4 @@
-﻿{
+{
     "buttons": {
         "create": "Aanmaken",
         "save": "Opslaan",
@@ -215,7 +215,7 @@
             "list": "Spoelen",
             "show_title": "[Spoel #{{id}}] {{name}}",
             "adjust": "Spoel Filament aanpassen",
-            "addweight": "Begingewicht aanpassen"
+            "adjustInitialWeight": "Begingewicht aanpassen"
         },
         "fields_help": {
             "used_weight": "Hoeveel filament er van de spoel is gebruikt. Op een nieuwe spoel zal 0g gebruikt zijn.",
@@ -243,8 +243,8 @@
             },
             "measurement_type_label": "Meettype",
             "adjust_filament_value": "Verbruikte hoeveelheid",
-            "addweight_help": "Voer het aantal gram in dat aan het begingewicht moet worden toegevoegd. Gebruik een negatief getal om af te trekken.",
-            "addweight_value": "Gewichtsaanpassing (g)"
+            "adjustInitialWeight_help": "Voer het aantal gram in dat aan het begingewicht moet worden toegevoegd. Gebruik een negatief getal om af te trekken.",
+            "adjustInitialWeight_value": "Gewichtsaanpassing (g)"
         },
         "formats": {
             "last_used": "Laatst gebruikt {{date}}"

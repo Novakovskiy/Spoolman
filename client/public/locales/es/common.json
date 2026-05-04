@@ -1,4 +1,4 @@
-﻿{
+{
     "actions": {
         "list": "Listar",
         "create": "Crear",
@@ -105,7 +105,7 @@
             "archive": "Archivar Bobina",
             "show_title": "[Bobina #{{id}}] {{name}}",
             "adjust": "Ajustar la bobina del filamento",
-            "addweight": "Ajustar peso inicial"
+            "adjustInitialWeight": "Ajustar peso inicial"
         },
         "messages": {
             "archive": "¿Esta seguro que quiere archivar esta bobina?"
@@ -119,8 +119,8 @@
             },
             "measurement_type_label": "Tipo de medición",
             "adjust_filament_value": "Cantidad consumida",
-            "addweight_help": "Introduce los gramos a añadir al peso inicial. Usa un número negativo para restar.",
-            "addweight_value": "Ajuste de peso (g)",
+            "adjustInitialWeight_help": "Introduce los gramos a añadir al peso inicial. Usa un número negativo para restar.",
+            "adjustInitialWeight_value": "Ajuste de peso (g)",
             "adjust_filament_help": "Aquí puedes añadir o restar directamente filamento de la bobina. Un valor positivo consumirá filamento, un valor negativo lo añadirá."
         },
         "formats": {

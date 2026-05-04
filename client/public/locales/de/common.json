@@ -1,4 +1,4 @@
-﻿{
+{
     "actions": {
         "list": "Auflisten",
         "create": "Erstellen",
@@ -206,7 +206,7 @@
             "archive": "Spule archivieren",
             "show_title": "[Spule #{{id}}] {{name}}",
             "adjust": "Filamentspulen Anpassung",
-            "addweight": "Anfangsgewicht anpassen"
+            "adjustInitialWeight": "Anfangsgewicht anpassen"
         },
         "messages": {
             "archive": "Sicher das die Spule archiviert werden soll?"
@@ -220,8 +220,8 @@
                 "weight": "Gewicht"
             },
             "adjust_filament_value": "Verbrauchte Menge",
-            "addweight_help": "Geben Sie die Gramm an, die zum Anfangsgewicht hinzugefügt werden sollen. Verwenden Sie eine negative Zahl zum Subtrahieren.",
-            "addweight_value": "Gewichtsanpassung (g)",
+            "adjustInitialWeight_help": "Geben Sie die Gramm an, die zum Anfangsgewicht hinzugefügt werden sollen. Verwenden Sie eine negative Zahl zum Subtrahieren.",
+            "adjustInitialWeight_value": "Gewichtsanpassung (g)",
             "measurement_type_label": "Messungstyp"
         },
         "formats": {

@@ -1,4 +1,4 @@
-﻿{
+{
     "actions": {
         "list": "Suchi",
         "create": "Banaye",
@@ -17,11 +17,11 @@
     },
     "spool": {
         "titles": {
-            "addweight": "Prarambhik bhar adjust karein"
+            "adjustInitialWeight": "Prarambhik bhar adjust karein"
         },
         "form": {
-            "addweight_help": "Prarambhik bhar mein jodne ke liye gram ki sankhya darj karein. Ghatane ke liye nakaratmak sankhya ka upayog karein.",
-            "addweight_value": "Bhar samayojan (g)"
+            "adjustInitialWeight_help": "Prarambhik bhar mein jodne ke liye gram ki sankhya darj karein. Ghatane ke liye nakaratmak sankhya ka upayog karein.",
+            "adjustInitialWeight_value": "Bhar samayojan (g)"
         }
     }
 }

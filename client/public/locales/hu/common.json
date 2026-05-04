@@ -1,4 +1,4 @@
-﻿{
+{
     "printing": {
         "qrcode": {
             "extruderTemp": "ET: {{temp}}",
@@ -114,7 +114,7 @@
         },
         "titles": {
             "archive": "Arhivált tekercs",
-            "addweight": "Kezdő tömeg módosítása",
+            "adjustInitialWeight": "Kezdő tömeg módosítása",
             "show": "Tekercs megjelenítése",
             "edit": "Tekercs szerkesztése",
             "create": "Tekercs létrehozása",
@@ -134,13 +134,13 @@
         "form": {
             "new_location_prompt": "Add meg az új helyet",
             "spool_updated": "Ez a tekercs azóta frissült valaki/valami más által, mióta megnyitottad ezt az oldalt. A mentés felül fogja írni ezeket a változásokat!",
-            "addweight_help": "Adja meg a kezdeti súlyhoz hozzáadandó gramm számát. Kivonáshoz használjon negatív számot.",
-            "addweight_value": "Súlykorrekció (g)"
+            "adjustInitialWeight_help": "Adja meg a kezdeti súlyhoz hozzáadandó gramm számát. Kivonáshoz használjon negatív számot.",
+            "adjustInitialWeight_value": "Súlykorrekció (g)"
         },
         "spool": "Tekercs",
         "messages": {
             "archive": "Biztosan archiválni szeretné ezt a tekercset?",
-            "addweight": "Kezdő tömeg módosítása"
+            "adjustInitialWeight": "Kezdő tömeg módosítása"
         }
     },
     "buttons": {
@@ -152,7 +152,7 @@
         "edit": "Szerkeszt",
         "showArchived": "Arhiváltak megjelítése",
         "archive": "Arhiválás",
-            "addweight": "Kezdő tömeg módosítása",
+            "adjustInitialWeight": "Kezdő tömeg módosítása",
         "hideColumns": "Oszlopok elrejtése",
         "confirm": "Biztos vagy benne?",
         "delete": "Töröl",

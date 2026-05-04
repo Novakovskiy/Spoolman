@@ -1,4 +1,4 @@
-﻿{
+{
     "buttons": {
         "create": "Opprett",
         "save": "Lagre",
@@ -202,7 +202,7 @@
             "show_title": "[Spole #{{id}}] {{name}}",
             "list": "Spoler",
             "adjust": "Juster spolefilament",
-            "addweight": "Juster startvekt"
+            "adjustInitialWeight": "Juster startvekt"
         },
         "spool": "Spoler",
         "messages": {
@@ -230,8 +230,8 @@
             "measurement_type_label": "Måleenhet",
             "adjust_filament_help": "Justér verdien hvis målt filamentmengde avviker fra forventet.",
             "adjust_filament_value": "Juster mengde",
-            "addweight_help": "Angi antall gram som skal legges til startvekten. Bruk et negativt tall for å trekke fra.",
-            "addweight_value": "Vektjustering (g)"
+            "adjustInitialWeight_help": "Angi antall gram som skal legges til startvekten. Bruk et negativt tall for å trekke fra.",
+            "adjustInitialWeight_value": "Vektjustering (g)"
         },
         "formats": {
             "last_used": "Sist brukt {{date}}"

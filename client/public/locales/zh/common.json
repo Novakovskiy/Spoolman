@@ -1,4 +1,4 @@
-﻿{
+{
     "actions": {
         "list": "列表",
         "create": "创建",
@@ -205,7 +205,7 @@
             "archive": "料盘存档",
             "show_title": "[料盘 #{{id}}] {{name}}",
             "adjust": "调整线盘耗材",
-            "addweight": "调整初始重量"
+            "adjustInitialWeight": "调整初始重量"
         },
         "messages": {
             "archive": "您确定要存档此料盘吗？"
@@ -220,8 +220,8 @@
             "measurement_type_label": "测量类型",
             "adjust_filament_help": "在这里你可以直接增加或减少线盘中的耗材。正数是减少耗材数量，负数是增加耗材数量。",
             "adjust_filament_value": "消耗量",
-            "addweight_help": "输入要添加到初始重量的克数。使用负数来减少。",
-            "addweight_value": "重量调整 (g)"
+            "adjustInitialWeight_help": "输入要添加到初始重量的克数。使用负数来减少。",
+            "adjustInitialWeight_value": "重量调整 (g)"
         },
         "formats": {
             "last_used": "上次使用 {{date}}"

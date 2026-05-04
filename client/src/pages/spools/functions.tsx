@@ -313,14 +313,14 @@ export function useAddWeightModal() {
 
     return (
       <Modal
-        title={t("spool.titles.addweight")}
+        title={t("spool.titles.adjustInitialWeight")}
         open
         onCancel={() => setCurSpool(null)}
         onOk={form.submit}
       >
-        <p>{t("spool.form.addweight_help")}</p>
+        <p>{t("spool.form.adjustInitialWeight_help")}</p>
         <Form form={form} onFinish={onSubmit}>
-          <Form.Item label={t("spool.form.addweight_value")} name="weight_adjustment">
+          <Form.Item label={t("spool.form.adjustInitialWeight_value")} name="weight_adjustment">
             <InputNumber ref={inputNumberRef} precision={0} addonAfter="g" />
           </Form.Item>
         </Form>
