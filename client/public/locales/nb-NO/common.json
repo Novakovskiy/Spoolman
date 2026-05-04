@@ -1,4 +1,4 @@
-{
+﻿{
     "buttons": {
         "create": "Opprett",
         "save": "Lagre",
@@ -15,6 +15,7 @@
         "logout": "Logg ut",
         "hideArchived": "Skjul arkiverte",
         "clearFilters": "Tøm filtre",
+        "adjustInitialWeight": "Juster startvekt",
         "unArchive": "Opphev arkivering",
         "clone": "Klon",
         "clear": "Tøm",
@@ -200,7 +201,8 @@
             "clone": "Klon spole",
             "show_title": "[Spole #{{id}}] {{name}}",
             "list": "Spoler",
-            "adjust": "Juster spolefilament"
+            "adjust": "Juster spolefilament",
+            "addweight": "Juster startvekt"
         },
         "spool": "Spoler",
         "messages": {
@@ -227,7 +229,9 @@
             },
             "measurement_type_label": "Måleenhet",
             "adjust_filament_help": "Justér verdien hvis målt filamentmengde avviker fra forventet.",
-            "adjust_filament_value": "Juster mengde"
+            "adjust_filament_value": "Juster mengde",
+            "addweight_help": "Angi antall gram som skal legges til startvekten. Bruk et negativt tall for å trekke fra.",
+            "addweight_value": "Vektjustering (g)"
         },
         "formats": {
             "last_used": "Sist brukt {{date}}"

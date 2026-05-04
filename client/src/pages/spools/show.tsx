@@ -1,4 +1,4 @@
-import { InboxOutlined, PrinterOutlined, ToTopOutlined, ToolOutlined } from "@ant-design/icons";
+import { InboxOutlined, PrinterOutlined, SwapOutlined, ToTopOutlined, ToolOutlined } from "@ant-design/icons";
 import { DateField, NumberField, Show, TextField } from "@refinedev/antd";
 import { useInvalidate, useShow, useTranslate } from "@refinedev/core";
 import { Button, Modal, Typography } from "antd";
@@ -12,7 +12,7 @@ import { EntityType, useGetFields } from "../../utils/queryFields";
 import { useCurrencyFormatter } from "../../utils/settings";
 import { getBasePath } from "../../utils/url";
 import { IFilament } from "../filaments/model";
-import { setSpoolArchived, useSpoolAdjustModal } from "./functions";
+import { setSpoolArchived, useAddWeightModal, useSpoolAdjustModal } from "./functions";
 import { ISpool } from "./model";
 
 dayjs.extend(utc);
@@ -43,6 +43,7 @@ export const SpoolShow = () => {
 
   // Provides the function to open the spool adjustment modal and the modal component itself
   const { openSpoolAdjustModal, spoolAdjustModal } = useSpoolAdjustModal();
+  const { openAddWeightModal, addWeightModal } = useAddWeightModal();
 
   // Function for opening an ant design modal that asks for confirmation for archiving a spool
   const archiveSpool = async (spool: ISpool, archive: boolean) => {
@@ -120,6 +121,9 @@ export const SpoolShow = () => {
           <Button type="primary" icon={<ToolOutlined />} onClick={() => record && openSpoolAdjustModal(record)}>
             {t("spool.titles.adjust")}
           </Button>
+          <Button type="primary" icon={<SwapOutlined />} onClick={() => record && openAddWeightModal(record)}>
+            {t("buttons.adjustInitialWeight")}
+          </Button>
           <Button
             type="primary"
             icon={<PrinterOutlined />}
@@ -145,6 +149,7 @@ export const SpoolShow = () => {
 
           {defaultButtons}
           {spoolAdjustModal}
+          {addWeightModal}
         </>
       )}
     >

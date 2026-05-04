@@ -1,4 +1,4 @@
-{
+﻿{
     "notifications": {
         "undoable": "取り消しまで残り{{seconds}}秒",
         "editSuccess": "{{resource}}の編集が完了",
@@ -43,6 +43,7 @@
         "delete": "削除",
         "clone": "複製",
         "clearFilters": "フィルタをクリア",
+        "adjustInitialWeight": "初期重量を調整",
         "import": "インポート"
     },
     "printing": {
@@ -188,6 +189,7 @@
             "clone": "スプールを複製",
             "show_title": "[スプール #{{id}}] {{name}}",
             "adjust": "スプールフィラメントの調整",
+            "addweight": "初期重量を調整",
             "edit": "スプールを編集",
             "archive": "アーカイブしたスプール",
             "list": "スプール",
@@ -202,7 +204,9 @@
             },
             "adjust_filament_help": "ここではスプールに直接フィラメントを追加したり差し引いたりすることができます。正の値はフィラメントを消費し、負の値はフィラメントを追加します。",
             "spool_updated": "このスプールは、このページを開いてから他の誰か/何かによって更新されています。保存すると、それらの変更が上書きされます!",
-            "adjust_filament_value": "消費量"
+            "adjust_filament_value": "消費量",
+            "addweight_help": "初期重量に追加するグラム数を入力してください。減算するには負の数を使用してください。",
+            "addweight_value": "重量調整 (g)"
         },
         "messages": {
             "archive": "本当にこのスプールをアーカイブしますか?"

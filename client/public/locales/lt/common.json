@@ -1,4 +1,4 @@
-{
+﻿{
     "actions": {
         "list": "Sąrašas",
         "create": "Sukurti",
@@ -29,7 +29,8 @@
         "showArchived": "Rodyti archyvuotus",
         "notAccessTitle": "Nepakanka teisių",
         "hideColumns": "Slėpti stulpelius",
-        "clearFilters": "Valyti filtrus"
+        "clearFilters": "Valyti filtrus",
+        "adjustInitialWeight": "Koreguoti pradinį svorį"
     },
     "warnWhenUnsavedChanges": "Ar tikrai norite išeiti? Yra neišsaugotų pakeitimų.",
     "notifications": {
@@ -194,7 +195,8 @@
             "show": "Rodyti ritę",
             "show_title": "[Ritė #{{id}}] {{name}}",
             "archive": "Archyvuoti ritę",
-            "adjust": "Reguliuoti ritės giją"
+            "adjust": "Reguliuoti ritės giją",
+            "addweight": "Koreguoti pradinį svorį"
         },
         "form": {
             "measurement_type": {
@@ -204,6 +206,8 @@
             "measurement_type_label": "Matavimo tipas",
             "adjust_filament_help": "Čia galite tiesiogiai pridėti arba atimti giją iš ritės. Teigiama vertė sunaudos giją, neigiama – jį pridės.",
             "adjust_filament_value": "Suvartoti kiekį",
+            "addweight_help": "Įveskite gramų skaičių, kurį reikia pridėti prie pradinio svorio. Norėdami atimti, naudokite neigiamą skaičių.",
+            "addweight_value": "Svorio koregavimas (g)",
             "new_location_prompt": "Įveskite naują vietą",
             "spool_updated": "Šią ritę kažkas kitas atnaujino nuo tada, kai atidarėte šį puslapį. Išsaugojus šie pakeitimai bus perrašyti!"
         },

@@ -111,6 +111,13 @@ class SpoolMeasureParameters(BaseModel):
     weight: float = Field(description="Current gross weight of the spool, in g.", examples=[200])
 
 
+class SpoolAdjustWeightParameters(BaseModel):
+    weight_adjustment: int = Field(
+        description="Amount (in grams) to add to the initial weight of the spool. Can be negative to subtract.",
+        examples=[100, -50],
+    )
+
+
 @router.get(
     "",
     name="Find spool",
@@ -551,3 +558,27 @@ async def measure(  # noqa: ANN201
             status_code=400,
             content={"message": e.args[0]},
         )
+
+
+@router.put(
+    "/{spool_id}/adjust_weight",
+    name="Adjust spool initial weight",
+    description=(
+        "Adjust the initial weight of the spool by adding a signed integer value (in grams). "
+        "The resulting initial weight will not go below 0."
+    ),
+    response_model_exclude_none=True,
+    response_model=Spool,
+    responses={
+        400: {"model": Message},
+        404: {"model": Message},
+    },
+)
+async def adjust_weight(
+    db: Annotated[AsyncSession, Depends(get_db_session)],
+    spool_id: int,
+    body: SpoolAdjustWeightParameters,
+) -> Spool:
+    db_item = await spool.adjust_initial_weight(db=db, spool_id=spool_id, weight_adjustment=body.weight_adjustment)
+    return Spool.from_db(db_item)
+

@@ -1,4 +1,4 @@
-{
+﻿{
     "printing": {
         "qrcode": {
             "extruderTemp": "ET: {{temp}}",
@@ -128,6 +128,7 @@
         },
         "titles": {
             "archive": "Arkivér spole",
+            "addweight": "Juster startvægt",
             "show": "Vis spole",
             "edit": "Redigér spole",
             "create": "Opret spole",
@@ -137,6 +138,8 @@
         },
         "form": {
             "spool_updated": "Denne spole er blevet redigeret af nogen/noget andet siden du åbnede denne side. Hvis du gemmer overskrives disse ændringer!",
+            "addweight_help": "Angiv antal gram der skal lægges til startvægten. Brug et negativt tal for at trække fra.",
+            "addweight_value": "Vægtjustering (g)",
             "new_location_prompt": "Indtast ny placering"
         },
         "fields_help": {
@@ -153,7 +156,8 @@
         },
         "spool": "Spoler",
         "messages": {
-            "archive": "Er du sikker på du vil arkivere denne spole?"
+            "archive": "Er du sikker på du vil arkivere denne spole?",
+            "addweight": "Juster startvægt"
         }
     },
     "buttons": {
@@ -165,6 +169,7 @@
         "edit": "Redigér",
         "showArchived": "Vis arkiverede",
         "archive": "Arkivér",
+            "addweight": "Juster startvægt",
         "hideColumns": "Skjul kolonner",
         "confirm": "Er du sikker?",
         "delete": "Slet",
@@ -175,6 +180,7 @@
         "notAccessTitle": "Du har ikke tilladelse til at tilgå",
         "hideArchived": "Skjul arkiverede",
         "clearFilters": "Ryd filtre",
+        "adjustInitialWeight": "Juster startvægt",
         "unArchive": "Fjern fra arkiv",
         "clone": "Klon",
         "clear": "Ryd",

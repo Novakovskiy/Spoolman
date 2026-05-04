@@ -194,6 +194,25 @@ export function useGetFilamentSelectOptions() {
   };
 }
 
+/**
+ * Adjust the spool's initial weight by adding a signed integer value (in grams).
+ * @param spoolId The spool ID
+ * @param weightAdjustment The amount to add (can be negative)
+ */
+export async function adjustSpoolInitialWeight(spoolId: number, weightAdjustment: number) {
+  const init: RequestInit = {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      weight_adjustment: weightAdjustment,
+    }),
+  };
+  const request = new Request(`${getAPIURL()}/spool/${spoolId}/adjust_weight`);
+  await fetch(request, init);
+}
+
 type MeasurementType = "length" | "weight" | "measured_weight";
 
 export function useSpoolAdjustModal() {
@@ -264,3 +283,54 @@ export function useSpoolAdjustModal() {
     spoolAdjustModal,
   };
 }
+
+export function useAddWeightModal() {
+  const t = useTranslate();
+  const [form] = useForm();
+  const inputNumberRef = useRef<InputNumberRef | null>(null);
+  const [curSpool, setCurSpool] = useState<ISpool | null>(null);
+
+  const openAddWeightModal = useCallback((spool: ISpool) => {
+    setCurSpool(spool);
+    form.resetFields();
+    setTimeout(() => {
+      inputNumberRef.current?.focus();
+    }, 0);
+  }, [form]);
+
+  const addWeightModal = useMemo(() => {
+    if (curSpool === null) {
+      return null;
+    }
+
+    const onSubmit = async () => {
+      if (curSpool === null) return;
+      const value = form.getFieldValue("weight_adjustment");
+      if (value === undefined || value === null) return;
+      await adjustSpoolInitialWeight(curSpool.id, value);
+      setCurSpool(null);
+    };
+
+    return (
+      <Modal
+        title={t("spool.titles.addweight")}
+        open
+        onCancel={() => setCurSpool(null)}
+        onOk={form.submit}
+      >
+        <p>{t("spool.form.addweight_help")}</p>
+        <Form form={form} onFinish={onSubmit}>
+          <Form.Item label={t("spool.form.addweight_value")} name="weight_adjustment">
+            <InputNumber ref={inputNumberRef} precision={0} addonAfter="g" />
+          </Form.Item>
+        </Form>
+      </Modal>
+    );
+  }, [curSpool, t, form]);
+
+  return {
+    openAddWeightModal,
+    addWeightModal,
+  };
+}
+

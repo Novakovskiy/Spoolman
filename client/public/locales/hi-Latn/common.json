@@ -1,4 +1,4 @@
-{
+﻿{
     "actions": {
         "list": "Suchi",
         "create": "Banaye",
@@ -12,6 +12,16 @@
         "edit": "Sampadan Karen",
         "confirm": "Kya aapko pakka hai?",
         "continue": "Aage badhen",
-        "show": "Dikhayen"
+        "show": "Dikhayen",
+        "adjustInitialWeight": "Prarambhik bhar adjust karein"
+    },
+    "spool": {
+        "titles": {
+            "addweight": "Prarambhik bhar adjust karein"
+        },
+        "form": {
+            "addweight_help": "Prarambhik bhar mein jodne ke liye gram ki sankhya darj karein. Ghatane ke liye nakaratmak sankhya ka upayog karein.",
+            "addweight_value": "Bhar samayojan (g)"
+        }
     }
 }

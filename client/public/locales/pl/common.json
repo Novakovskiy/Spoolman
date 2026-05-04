@@ -1,4 +1,4 @@
-{
+﻿{
     "actions": {
         "list": "Lista",
         "create": "Utwórz",
@@ -28,6 +28,7 @@
         "notAccessTitle": "Nie masz zezwolenia na dostęp",
         "hideColumns": "Edytuj kolumny",
         "clearFilters": "Wyczyść filtry",
+        "adjustInitialWeight": "Dostosuj wagę początkową",
         "saveAndAdd": "Zapisz i dodaj",
         "continue": "Kontynuuj"
     },
@@ -40,7 +41,8 @@
             "clone": "Klonowanie szpuli",
             "archive": "Zarchiwizuj szpulę",
             "show_title": "[Szpula #{{id}}] {{name}}",
-            "adjust": "Dostosuj szpulę filamentu"
+            "adjust": "Dostosuj szpulę filamentu",
+            "addweight": "Dostosuj wagę początkową"
         },
         "spool": "Szpule",
         "fields": {
@@ -91,7 +93,9 @@
             },
             "measurement_type_label": "Typ pomiaru",
             "adjust_filament_help": "Tutaj możesz bezpośrednio dodać lub usunąć filament z szpuli. Dodatnia wartość spowoduje odjęcie filamentu, ujemna wartość spowoduje jego dodanie.",
-            "adjust_filament_value": "Ilość zużycia"
+            "adjust_filament_value": "Ilość zużycia",
+            "addweight_help": "Podaj liczbę gramów do dodania do wagi początkowej. Użyj liczby ujemnej, aby odjąć.",
+            "addweight_value": "Korekta wagi (g)"
         },
         "formats": {
             "last_used": "Ostatnio użyty {{date}}"

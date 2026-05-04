@@ -1,4 +1,4 @@
-{
+﻿{
     "actions": {
         "list": "Liste",
         "create": "Oluştur",
@@ -29,7 +29,8 @@
         "showArchived": "Arşivlenenleri göster",
         "notAccessTitle": "Erişim için yetkiniz bulunmamakta",
         "hideColumns": "Sütunları gizle",
-        "clearFilters": "Filtreleri temizle"
+        "clearFilters": "Filtreleri temizle",
+        "adjustInitialWeight": "Başlangıç ağırlığını ayarla"
     },
     "warnWhenUnsavedChanges": "Çıkmak istediğinizden emin misiniz? Kaydedilmemiş değişiklikleriniz bulunmakta.",
     "notifications": {
@@ -193,7 +194,8 @@
             "show": "Makarayı Göster",
             "show_title": "[Makara #{{id}}] {{name}}",
             "archive": "Makarayı Arşivle",
-            "adjust": "Makara filamentini ayarla"
+            "adjust": "Makara filamentini ayarla",
+            "addweight": "Başlangıç ağırlığını ayarla"
         },
         "form": {
             "measurement_type": {
@@ -203,6 +205,8 @@
             "measurement_type_label": "Ölçüm Şekli",
             "adjust_filament_help": "Burada makaradan filament doğrudan ekleyebilir veya çıkarabilirsiniz. Pozitif bir değer filamentin tüketildiğini, negatif bir değer ise filamentin eklendiğini gösterir.",
             "adjust_filament_value": "Tüketim Miktarı",
+            "addweight_help": "Başlangıç ağırlığına eklenecek gram sayısını girin. Çıkarmak için negatif sayı kullanın.",
+            "addweight_value": "Ağırlık düzeltmesi (g)",
             "new_location_prompt": "Yeni konumu girin",
             "spool_updated": "Bu makara, siz bu sayfayı açtığınızdan beri başka biri veya bir şey tarafından güncellendi. Kaydetme işlemi bu değişikliklerin üzerine yazacaktır!"
         },

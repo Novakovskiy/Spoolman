@@ -246,6 +246,26 @@ async def delete(db: AsyncSession, spool_id: int) -> None:
     await db.delete(spool)
 
 
+async def adjust_initial_weight(
+    *,
+    db: AsyncSession,
+    spool_id: int,
+    weight_adjustment: int,
+) -> models.Spool:
+    """Adjust the initial_weight of a spool by adding the given signed integer value."""
+    spool_item = await get_by_id(db, spool_id)
+    current_weight = spool_item.initial_weight
+    if current_weight is None:
+        current_weight = spool_item.filament.weight if spool_item.filament.weight is not None else 0.0
+    new_weight = current_weight + weight_adjustment
+    if new_weight < 0:
+        new_weight = 0.0
+    spool_item.initial_weight = new_weight
+    await db.commit()
+    await spool_changed(spool_item, EventType.UPDATED)
+    return spool_item
+
+
 async def clear_extra_field(db: AsyncSession, key: str) -> None:
     """Delete all extra fields with a specific key."""
     await db.execute(

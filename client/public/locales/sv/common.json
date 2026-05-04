@@ -1,4 +1,4 @@
-{
+﻿{
     "actions": {
         "list": "Lista",
         "create": "Skapa",
@@ -28,6 +28,7 @@
         "notAccessTitle": "Du har inte tillgång till denna sida",
         "hideColumns": "Dölj kolumner",
         "clearFilters": "Rensa filter",
+        "adjustInitialWeight": "Justera ursprungsvikt",
         "saveAndAdd": "Spara och Lägg till",
         "continue": "Fortsätt"
     },
@@ -195,7 +196,8 @@
             "show": "Visa spole",
             "archive": "Arkivera spole",
             "show_title": "[Spole #{{id}}] {{name}}",
-            "adjust": "Justera Spolmängd"
+            "adjust": "Justera Spolmängd",
+            "addweight": "Justera ursprungsvikt"
         },
         "messages": {
             "archive": "Är du säker på att du vill arkivera denna spole?"
@@ -209,6 +211,8 @@
             },
             "measurement_type_label": "Mättyp",
             "adjust_filament_value": "Mängd att konsumera",
+            "addweight_help": "Ange antal gram att lägga till ursprungsvikten. Använd ett negativt tal för att subtrahera.",
+            "addweight_value": "Viktjustering (g)",
             "adjust_filament_help": "Här kan du direkt lägga till eller subtrahera filament från spolen. Ett positivt värde kommer att konsumera filament, ett negativt värde kommer att lägga till det."
         },
         "formats": {

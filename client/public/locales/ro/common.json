@@ -1,4 +1,4 @@
-{
+﻿{
     "buttons": {
         "create": "creaza",
         "save": "salveaza",
@@ -22,6 +22,7 @@
         "notAccessTitle": "nu ai permisiune de acces",
         "hideColumns": "ascunde coloane",
         "clearFilters": "reseteaza filtre",
+        "adjustInitialWeight": "Ajustați greutatea inițială",
         "continue": "Continua"
     },
     "actions": {
@@ -233,7 +234,8 @@
             "show": "Arata bobina",
             "edit": "Editeaza bobina",
             "clone": "Cloneaza bobina",
-            "adjust": "Ajustarea rolei de filament"
+            "adjust": "Ajustarea rolei de filament",
+            "addweight": "Ajustați greutatea inițială"
         },
         "messages": {
             "archive": "Esti sigur ca vrei sa arhivezi aceasta bobina?"
@@ -247,7 +249,9 @@
             },
             "measurement_type_label": "Tipul măsurării",
             "adjust_filament_help": "Aici poți adăuga sau elimina direct filament din rolă. O valoare pozitivă va consuma filament, iar o valoare negativă îl va adăuga.",
-            "adjust_filament_value": "Cantitatea consumată"
+            "adjust_filament_value": "Cantitatea consumată",
+            "addweight_help": "Introduceți numărul de grame de adăugat la greutatea inițială. Folosiți un număr negativ pentru a scădea.",
+            "addweight_value": "Ajustare greutate (g)"
         },
         "spool": "Bobine",
         "formats": {

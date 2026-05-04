@@ -3,6 +3,7 @@ import {
   EyeOutlined,
   FilterOutlined,
   InboxOutlined,
+  SwapOutlined,
   PlusSquareOutlined,
   PrinterOutlined,
   ToolOutlined,
@@ -37,7 +38,7 @@ import { removeUndefined } from "../../utils/filtering";
 import { EntityType, useGetFields } from "../../utils/queryFields";
 import { TableState, useInitialTableState, useSavedState, useStoreInitialState } from "../../utils/saveload";
 import { useCurrencyFormatter } from "../../utils/settings";
-import { setSpoolArchived, useSpoolAdjustModal } from "./functions";
+import { setSpoolArchived, useAddWeightModal, useSpoolAdjustModal } from "./functions";
 import { ISpool } from "./model";
 
 dayjs.extend(utc);
@@ -104,6 +105,7 @@ export const SpoolList = () => {
   const extraFields = useGetFields(EntityType.spool);
   const currencyFormatter = useCurrencyFormatter();
   const { openSpoolAdjustModal, spoolAdjustModal } = useSpoolAdjustModal();
+  const { openAddWeightModal, addWeightModal } = useAddWeightModal();
 
   const allColumnsWithExtraFields = [...allColumns, ...(extraFields.data?.map((field) => "extra." + field.key) ?? [])];
 
@@ -214,6 +216,7 @@ export const SpoolList = () => {
     (record: ISpoolCollapsed) => {
       const actions: Action[] = [
         { name: t("buttons.show"), icon: <EyeOutlined />, link: showUrl("spool", record.id) },
+        { name: t("buttons.adjustInitialWeight"), icon: <SwapOutlined />, onClick: () => openAddWeightModal(record) },
         { name: t("buttons.edit"), icon: <EditOutlined />, link: editUrl("spool", record.id) },
         { name: t("buttons.clone"), icon: <PlusSquareOutlined />, link: cloneUrl("spool", record.id) },
         { name: t("spool.titles.adjust"), icon: <ToolOutlined />, onClick: () => openSpoolAdjustModal(record) },
@@ -229,7 +232,7 @@ export const SpoolList = () => {
       }
       return actions;
     },
-    [t, editUrl, showUrl, cloneUrl, openSpoolAdjustModal, archiveSpool, archiveSpoolPopup],
+    [t, editUrl, showUrl, cloneUrl, openSpoolAdjustModal, openAddWeightModal, archiveSpool, archiveSpoolPopup],
   );
 
   const originalOnChange = tableProps.onChange;
@@ -326,6 +329,7 @@ export const SpoolList = () => {
       )}
     >
       {spoolAdjustModal}
+      {addWeightModal}
       <Table
         {...tableProps}
         sticky

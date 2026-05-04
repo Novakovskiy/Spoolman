@@ -1,4 +1,4 @@
-{
+﻿{
     "actions": {
         "list": "Seznam",
         "create": "Vytvořit",
@@ -28,6 +28,7 @@
         "notAccessTitle": "Nemáte oprávnění k přístupu",
         "hideColumns": "Skrýt sloupce",
         "clearFilters": "Vypnout filtry",
+        "adjustInitialWeight": "Upravit počáteční hmotnost",
         "saveAndAdd": "Uložit a přidat",
         "continue": "Pokračovat"
     },
@@ -205,7 +206,8 @@
             "show": "Zobrazit cívku",
             "archive": "Archivní cívka",
             "show_title": "[Cívka #{{id}}] {{name}}",
-            "adjust": "Nastavení cívky filamentu"
+            "adjust": "Nastavení cívky filamentu",
+            "addweight": "Upravit počáteční hmotnost"
         },
         "messages": {
             "archive": "Opravdu chcete tuto cívku archivovat?"
@@ -219,7 +221,9 @@
             },
             "measurement_type_label": "Typ měření",
             "adjust_filament_help": "Zde můžete přímo přidávat nebo odebírat filament z cívky. Kladná hodnota filament odebere, záporná hodnota ho přidá.",
-            "adjust_filament_value": "Spotřebované množství"
+            "adjust_filament_value": "Spotřebované množství",
+            "addweight_help": "Zadejte počet gramů pro přidání k počáteční hmotnosti. Pro odečtení použijte záporné číslo.",
+            "addweight_value": "Úprava hmotnosti (g)"
         },
         "formats": {
             "last_used": "Naposledy použitý {{date}}"

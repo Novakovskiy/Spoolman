@@ -1,4 +1,4 @@
-{
+﻿{
     "actions": {
         "list": "Kuva",
         "create": "Loo",
@@ -15,6 +15,7 @@
         "show": "Näita",
         "hideColumns": "Peida tulbad",
         "clearFilters": "Tühjenda filtrid",
+        "adjustInitialWeight": "Muuda algkaalu",
         "edit": "Muuda",
         "undo": "Võta tagasi",
         "clone": "Klooni",
@@ -61,6 +62,15 @@
     "printing": {
         "generic": {
             "title": "Trükkib"
+        }
+    },
+    "spool": {
+        "titles": {
+            "addweight": "Muuda algkaalu"
+        },
+        "form": {
+            "addweight_help": "Sisestage grammide arv, mida soovite algkaalule lisada. Lahutamiseks kasutage negatiivset arvu.",
+            "addweight_value": "Kaalu muutus (g)"
         }
     }
 }

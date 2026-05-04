@@ -1,4 +1,4 @@
-{
+﻿{
     "printing": {
         "qrcode": {
             "extruderTemp": "ET: {{temp}}",
@@ -156,7 +156,8 @@
             "clone": "Clona Bobina",
             "show_title": "[Bobina #{{id}}] {{name}}",
             "list": "Bobine",
-            "adjust": "Regola il filamento della bobina"
+            "adjust": "Regola il filamento della bobina",
+            "addweight": "Regola il peso iniziale"
         },
         "fields_help": {
             "used_weight": "Quanto filamento è stato utilizzato dalla bobina. Una nuova bobina dovrebbe avere 0 gr utilizzati.",
@@ -178,6 +179,8 @@
                 "weight": "Peso"
             },
             "adjust_filament_value": "Quantità di consumo",
+            "addweight_help": "Inserisci i grammi da aggiungere al peso iniziale. Usa un numero negativo per sottrarre.",
+            "addweight_value": "Modifica peso (g)",
             "measurement_type_label": "Tipo di misurazione",
             "adjust_filament_help": "Qui puoi aggiungere o sottrarre direttamente filamento dalla bobina. Un valore positivo consumerà filamento, un valore negativo lo aggiungerà."
         },
@@ -208,6 +211,7 @@
         "notAccessTitle": "Non hai i permessi per accedere",
         "hideArchived": "Nascondi Archiviati",
         "clearFilters": "Cancella Filtri",
+        "adjustInitialWeight": "Regola il peso iniziale",
         "unArchive": "Ripristina",
         "clone": "Clona",
         "clear": "Pulisci",

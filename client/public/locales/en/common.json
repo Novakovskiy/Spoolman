@@ -1,4 +1,4 @@
-{
+﻿{
     "actions": {
         "list": "List",
         "create": "Create",
@@ -29,7 +29,8 @@
         "showArchived": "Show Archived",
         "notAccessTitle": "You don't have permission to access",
         "hideColumns": "Hide Columns",
-        "clearFilters": "Clear Filters"
+        "clearFilters": "Clear Filters",
+        "adjustInitialWeight": "Adjust Initial Weight"
     },
     "warnWhenUnsavedChanges": "Are you sure you want to leave? You have unsaved changes.",
     "notifications": {
@@ -193,7 +194,8 @@
             "show": "Show Spool",
             "show_title": "[Spool #{{id}}] {{name}}",
             "archive": "Archive Spool",
-            "adjust": "Adjust Spool Filament"
+            "adjust": "Adjust Spool Filament",
+            "addweight": "Adjust Initial Weight"
         },
         "form": {
             "measurement_type": {
@@ -203,6 +205,8 @@
             "measurement_type_label": "Measurement Type",
             "adjust_filament_help": "Here you can directly add or subtract filament from the spool. A positive value will consume filament, a negative value will add it.",
             "adjust_filament_value": "Consume Amount",
+            "addweight_help": "Enter the number of grams to add to the initial weight. Use a negative number to subtract.",
+            "addweight_value": "Weight Adjustment (g)",
             "new_location_prompt": "Enter a new location",
             "spool_updated": "This spool has been updated by someone/something else since you opened this page. Saving will overwrite those changes!"
         },
